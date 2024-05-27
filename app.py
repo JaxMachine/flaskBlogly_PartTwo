@@ -21,7 +21,7 @@ def home_page():
     
     posts = Post.query.order_by(Post.created_at.desc()).limit(5).all()
 
-    return redirect("hompage.html",posts=posts)
+    return render_template("homepage.html",posts=posts)
 
 
 @app.errorhandler(404)

@@ -58,6 +58,7 @@ class Post(db.Model):
 
         return self.created_at.strftime("%a % b %-d %Y, %-I:%M %p")
 
+
 def connect_db(app):
     """connect to the database"""
     
